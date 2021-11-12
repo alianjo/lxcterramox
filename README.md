@@ -10,7 +10,7 @@ pveum role add TerraformProv -privs "VM.Allocate VM.Clone VM.Config.CDROM VM.Con
 pveum user add <USER>@pve --password <PASSWORD>
 pveum aclmod / -user <USER>@pve -role TerraformProv
 ```
-## edit main.tf with your user and password values
+## come back to your working directory that you have cloned the repository edit main.tf with your user and password values
 ```
 terraform {
   required_providers {
