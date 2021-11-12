@@ -28,6 +28,5 @@ provider "proxmox" {
 ```
 ## now start and create you lxc containers
 ```
-consol
 terraform init
 ```
