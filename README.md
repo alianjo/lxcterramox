@@ -29,3 +29,6 @@ provider "proxmox" {
 ```
 terraform init
 ```
+```
+terraform apply
+```
