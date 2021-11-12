@@ -26,10 +26,15 @@ provider "proxmox" {
     pm_password = "<PASSWORD>"
 }
 ```
-### now start and create you lxc containers
+### now initialize, this is going to download provider plugin
 ```
 terraform init
 ```
+### terraform plan for see what resources are you going to create or delete
+```
+  terraform plan
+```
+### terraform apply
 ```
 terraform apply
 ```
