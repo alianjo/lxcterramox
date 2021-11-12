@@ -33,6 +33,6 @@ resource "proxmox_lxc" "basic" {
   network {
     name   = "eth0"
     bridge = "vmbr0"
-    ip     = "192.168.1.1${count.index + 1}/24" #we are starting the ip addresses from 192.168.1.10 you can change it (the prefix is necessary)
+    ip     = "dhcp" # you also can put "192.168.1.1${count.index + 1}/24" instead dhcp 
   }
 }
