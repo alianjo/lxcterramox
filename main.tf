@@ -23,7 +23,7 @@ resource "proxmox_lxc" "basic" {
   password     = "changeme"  # this password is for user login the default user is root
   unprivileged = true
   start        = true
-  count        = 3        # how many users you want to create (you can change it)
+  count        = 3        # how many resources you want to create (you can change it)
   // Terraform will crash without rootfs defined
   rootfs {
     storage = "local"
