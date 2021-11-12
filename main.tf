@@ -20,7 +20,7 @@ resource "proxmox_lxc" "basic" {
   target_node  = "pve"
   hostname     =  "instance-${ count.index + 1 }"
   ostemplate   = "local:vztmpl/ubuntu-20.04-standard_20.04-1_amd64.tar.gz"
-  password     = "<PASSWORD>"  # this password is for user login the default user is root
+  password     = "changeme"  # this password is for user login the default user is root
   unprivileged = true
   start        = true
   count        = 3        # how many users you want to create (you can change it)
